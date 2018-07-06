@@ -1,2 +1,1 @@
-# Dynamodb
-DynamoDB master
+# dynamodb
