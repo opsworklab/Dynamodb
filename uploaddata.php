@@ -12,13 +12,13 @@
     use Aws\DynamoDb\DynamoDbClient;
 
     $client = DynamoDbClient::factory(array(
-        'region' => 'eu-west-1',  // replace with your desired region
+        'region' => 'ca-central-1',  // replace with your desired region
         'version' => '2012-08-10' // Now needs a version
     ));
 
     # Setup some local variables for dates
 
-    date_default_timezone_set('UTC');
+    date_default_timezone_set('CDT');
 
     $oneDayAgo = date('Y-m-d H:i:s', strtotime('-1 days'));
     $sevenDaysAgo = date('Y-m-d H:i:s', strtotime('-7 days'));
